@@ -1,5 +1,5 @@
 //Importing Pupprteer
-const puppeteer=require(' ');
+const puppeteer=require('puppeteer');
 //Running async function
 (async ()=>{
     //Defining Essentials
