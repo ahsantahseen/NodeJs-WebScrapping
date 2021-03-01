@@ -1,5 +1,5 @@
 //Importing Pupprteer
-const puppeteer=require('puppeteer');
+const puppeteer=require(' ');
 //Running async function
 (async ()=>{
     //Defining Essentials
@@ -11,10 +11,12 @@ const puppeteer=require('puppeteer');
     let data = await page.evaluate(()=>{
         let movieName=document.querySelector('div[class="title_wrapper"]> h1').innerText
         let rating=document.querySelector('span[itemprop="ratingValue"]').innerText
+        let plot=document.querySelector('div[class="summary_text"] ').innerText 
         
         return{
             movieName,
-            rating
+            rating,
+            plot
         }
     });
 //Logging Data
